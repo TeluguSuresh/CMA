@@ -4,27 +4,27 @@ This project aims to develop a system for extracting data from scanned PDF files
 The primary goal of this project is to automate the extraction of data from scanned PDF documents. These documents are converted into images, processed using Poppler and OCR to extract textual data, which is then structured and stored in a CSV file format. Finally, the CSV files are uploaded into a PostgreSQL database for further analysis and querying. To improve processing efficiency, multithreading is utilized to handle multiple PDFs simultaneously.
 
 # Softwares
-Python 3.x 
-PostgreSQL 
-Tesseract OCR 
+Python 3.x ,
+PostgreSQL ,
+Tesseract OCR, 
 Poppler
 
-# Python Libraries: 
-pytesseract
-pdf2image
-Regex
-pandas
-psycopg2
-numpy
+# Python Libraries
+pytesseract,
+pdf2image,
+Regex,
+pandas,
+psycopg2,
+numpy,
 concurrent.futures
 
-# System Architecture PDF to Image Conversion: 
+# System Architecture PDF to Image Conversion
 Convert scanned PDF pages into images using Poppler and pdf2image. OCR Processing: Use Tesseract OCR to extract text from images. Data Structuring: Organize the extracted text into a structured format using Pandas DataFrame. CSV Generation: Export the structured data into CSV files. Database Storage: Insert the CSV data into a PostgreSQL database. Parallel Processing: Use multithreading to process multiple PDFs concurrently.
 
 # Prerequisites
-Install Python 
-Install PostgreSQL 
-Install Tesseract OCR
+Install Python ,
+Install PostgreSQL, 
+Install Tesseract OCR,
 Install Poppler
 
 # End-to-End Testing
